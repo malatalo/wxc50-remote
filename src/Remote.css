@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+
+* {
+  user-select: none;
+} 
+
+html {
+  background-color: transparent;
+  width: 226px;
+  font-family: 'Nova Mono', monospace;
+  font-weight: 400;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+.main {
+  border: 1px solid #424242;
+  border-radius: 25px;
+  background-color: #616161;
+  position: relative;
+}
+
+.topBtns {
+  background-color: #212121;
+  border-radius: 25px 25px 0 0;
+  padding: 15px 15px 0 15px;
+
+  display: flex;
+  flex-flow: row wrap;
+}
+
+button {
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  margin: 9px 7px;
+  background-color: #212121;
+  color: #F5F5F5;
+  background: radial-gradient(circle at 5px 5px, #757575, #000);
+  border: 1px solid #111111;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.btn-body-gray {
+  background: radial-gradient(circle at 5px 5px, #9E9E9E, #424242);
+}
+
+.btn-body-gray-right {
+  background: radial-gradient(circle at -17.5px -17.5px, #9E9E9E, #424242);
+}
+
+.power-on {
+  color: #66BB6A;
+  border-color: #66BB6A;
+}
+
+.power-on > img {
+  filter: invert(62%) sepia(65%) saturate(292%) hue-rotate(73deg) brightness(91%) contrast(99%);
+}
+
+.btn-red {
+  color: black;
+  border-color: #B71C1C;
+  box-shadow: 0 0 5px 1px #E57373;
+  background: radial-gradient(circle at 5px 5px, #E57373, #B71C1C);
+}
+
+.btn-red > img {
+  filter: invert(13%) sepia(0%) saturate(0%) hue-rotate(1deg) brightness(96%) contrast(100%);
+}
+
+.btn-teal {
+  color: #4DB6AC;
+  border-color: #4DB6AC;
+}
+
+.btn-teal > img {
+  filter: invert(62%) sepia(65%) saturate(321%) hue-rotate(125deg) brightness(90%) contrast(90%);
+}
+
+.btn-green {
+  color: #66BB6A;
+  border-color: #66BB6A;
+}
+
+.btn-purple {
+  color: #9575CD;
+  border-color: #9575CD;
+}
+
+.btn-white {
+  color: #ECEFF1;
+  border-color: #ECEFF1;
+}
+
+.btn-yellow {
+  color: #F9A825;
+  border-color: #F9A825;
+}
+
+.btn-yellow > img {
+  filter: invert(69%) sepia(97%) saturate(1077%) hue-rotate(341deg) brightness(101%) contrast(96%);
+}
+
+.btn-active {
+  box-shadow: 0 0 8px 4px;
+}
+
+.btn-half {
+  width: 22.5px;
+}
+
+.btn-half-left {
+  border-radius: 90px 0 0 90px;
+  margin: 9px 0 9px 7px;
+}
+
+.btn-half-right {
+  border-radius: 0 90px 90px 0;
+  margin: 9px 7px 9px 0;
+}
+
+.filter-white {
+  filter: invert(92%) sepia(37%) saturate(7%) hue-rotate(161deg) brightness(115%) contrast(92%);
+}
+
+.filter-black {
+  filter: invert(13%) sepia(0%) saturate(0%) hue-rotate(1deg) brightness(96%) contrast(100%);
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.container {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center
+}
+
+.container-btns {
+  border: 1px solid #111111;
+  border-radius: 10px;
+  width: 180px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.hover-icon {
+  position: absolute;
+  top: 20px;
+  pointer-events: none;
+}
+
+.container-dark {
+  background-color: #212121;
+}
+
+.noborder {
+  border: 0;
+}
+
+.noborder button {
+  border-color: #616161;
+}
+
+.vol-btn {
+  padding-right: 5px;
+}
+
+span {
+  line-height: 30px;
+}
+
+.vol-container {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  background: transparent;
+  width: 164px;
+  margin: 25px 0 25px 7px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #111111;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 5px 5px, #757575, #000);
+  cursor: pointer;
+  margin-top: -18px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 170px;
+  height: 10px;
+  cursor: pointer;
+  background: #212121;
+  border-radius: 5px;
+}
+
+@-webkit-keyframes rotating {
+  from{
+      -webkit-transform: rotate(0deg);
+  }
+  to{
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+}
